@@ -46,7 +46,7 @@ export default function Navbar(){
     return(
         <header className=" sticky top-0 bg-background z-40">
             <nav className="nav-container flex justify-between items-center px-4 py-4 md:px-10 lg:px-12">
-                <Image src="/logo.svg" alt=" logo" width={40} height={40} />
+              <Link href='/'><Image src="/logo.svg" alt=" logo" width={40} height={40} /></Link>
                 <div className=" hidden lg:flex items-center gap-5 text-sm">
                     {links.map((link, id) => (
                         <div key={id}>
