@@ -23,6 +23,6 @@ export default function Checkout ({name, description, price ,currency, image, pr
     };
 
     return (
-        <Button variant="secondary" onClick={() => buyNow(product.price_id)}>Add to Cart</Button>
+        <Button variant="secondary" onClick={() => buyNow(product.price_id)}>Checkout Now</Button>
     )
 }
