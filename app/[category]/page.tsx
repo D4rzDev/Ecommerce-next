@@ -28,16 +28,18 @@ export default async function categoryPage({ params }:{params: {category:string}
             <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-10">
                 {data.map((product)=>(
                     <div key={product._id}>
+                        <Link href={`/product/${product.slug}`}>
                         <div className=" flex flex-col items-center h-[22rem] p-8 gap-4 bg-[#111111] rounded-sm hover:bg-[#212121]">
                             <div className=" flex items-center justify-center w-[100%] h-[12rem]">
                             <Image  src={product.imageUrl} alt="Product image" width={180} height={180}/>
                             </div>
                             <div className=" flex flex-col gap-2 w-[100%]">
                                 <h2 className=" text-lg font-bold text-[#81689D]">${product.price}</h2>
-                                <h1 className=" text-sm"><Link href={`/product/${product.slug}`}>{product.name}</Link></h1>
+                                <h1 className=" text-sm">{product.name}</h1>
                             </div>
 
                         </div>
+                        </Link>
                     </div>
                 ))}
 
