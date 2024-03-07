@@ -28,7 +28,6 @@ import { useShoppingCart } from "use-shopping-cart";
  const links = [
         {name:'Home', href: '/',},
         {name:'New Collection', href: '#newCollection',},
-        {name:'All Products', href: '/',}
     ]
 
 
